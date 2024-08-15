@@ -1,8 +1,10 @@
 package com.carlosproject.charlesproject.domain.entities;
 
+// SERIALIZABLE ES PARA QUE JPA PUEDA GESTIONAR CORRECTAMENTE LAS CLAVES PRIMARIAS COMPUESTAS
 import java.io.Serializable;
 import jakarta.persistence.Embeddable;
 
+// EMBEDDEABLE INDICA QUE ES PARTE DE UNA CLAVE COMPUESTA, JPA VA A USAR LOS CAMPOS DE ESTA CLASE PARA FORMAR UNA CLAVE PRIMARA DE OTRA ENTIDAD 
 @Embeddable
 public class FarmarcyMedicineId implements Serializable{
     
